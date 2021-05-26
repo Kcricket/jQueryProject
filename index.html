@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+
+    
+</head>
+<body>
+    <div class="bigContainer">
+
+            <label for="input"> <h5>Newsmaid Search</h5></label>
+            <input type="text" name="" id="input" onkeyup="peticionBuscador()" >
+            <input type="submit" value="Search" id="submit">
+
+            <!-- <input type="submit" value="Search" id="submit" onclick="createNewNew()"> -->
+            <button id='whatsNew' onclick="listenForDoc()">What`s New?</button>
+            <img id= "gif" src="loading.gif" alt="loading.." style="visibility:hidden;">
+
+        <div id="xcontainer">
+
+            <div id="container">
+                <h4>Here are some of today`s news:</h4>
+                <ul class="class-list"></ul>
+
+        
+            </div>
+            <div id="container2">
+                <h4>Type somethin on the searchbar to load related News</h4>
+                <ul class="class-list"></ul>
+        
+            </div>
+
+        </div>
+    </div>
+    <!-- Esta ventana solo se abrirá con el botón Mas info -->
+    <button id="myBtn">Open Modal</button>
+
+        <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="hideModal()">&times;</span>
+            <p class="author"></p>
+            <p class="description"></p>
+            <p class="content"></p>
+            <p class="published"></p>
+            <p class="link"></p>
+        </div>
+
+    </div>
+        
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
